@@ -1,7 +1,3 @@
-node_modules
-build
-npm-debug.log
-
 **/.classpath
 **/.dockerignore
 **/.env
@@ -15,7 +11,6 @@ npm-debug.log
 **/*.*proj.user
 **/*.dbmdl
 **/*.jfm
-**/bin
 **/charts
 **/docker-compose*
 **/compose*
