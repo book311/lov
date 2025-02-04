@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  spl4bsinnovatemain:
+    image: spl4bsinnovatemain
+    build:
+      context: .
+      dockerfile: ./Dockerfile

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 7%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 174 100% 48%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --ring: 0 0% 20%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground bg-gradient-glow min-h-screen;
+  }
+}
+
+@layer components {
+  .card-base {
+    @apply bg-background-translucent backdrop-blur-sm border border-foreground-translucent rounded-lg p-6 hover:shadow-neon transition-shadow duration-300;
+  }
+  
+  .section-base {
+    @apply bg-gradient-glow py-20;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-foreground to-foreground-muted bg-clip-text text-transparent;
+  }
+}
